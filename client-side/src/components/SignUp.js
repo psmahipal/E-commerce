@@ -16,7 +16,7 @@ const SignUp = () => {
     })
 
     const handleSubmit = async () => {
-        console.log('fsfsfdsfsfsf sfs')
+        // console.log('fsfsfdsfsfsf sfs')
         let result = await fetch('http://localhost:5000/register', {
             method: 'post',
             body: JSON.stringify({ name, password, email }),
