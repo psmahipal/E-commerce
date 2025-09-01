@@ -1,0 +1,13 @@
+.profile_btn {
+ border: '1px solid white';
+ width: '40px';
+ height: '40px';
+ display: 'flex';
+ color: 'black';
+ text-align: center;
+ background-color: white;
+ font-weight: bold;
+ align-items: center;
+ cursor: pointer;
+ border-radius: "50%";
+}
