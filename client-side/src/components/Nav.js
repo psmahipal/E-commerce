@@ -4,7 +4,7 @@ const Nav = () => {
     const auth = localStorage.getItem('user');
     const navigate = useNavigate();
     const data = JSON.parse(auth);
-    console.log("auth", data[0].name)
+    // console.log("auth", data[0].name)
 
     const logout = () => {
         console.log("apple")

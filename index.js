@@ -1,6 +1,7 @@
 const express = require('express');
 require('./db/config');
 const User = require('./db/users');
+const Product = require('./db/product');
 const cors = require('cors');
 
 const app = express();
@@ -13,6 +14,13 @@ app.post("/register", async (req, resp) => {
     result = result.toObject();
     delete result.password
     resp.send(result)
+})
+
+app.post("/add-product", async (req, resp) => {
+    let product  = new Product(req.body);
+    let result = await product.save();
+    resp.send(result);
+
 })
 
 app.post("/login", async (req, resp) => {
