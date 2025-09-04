@@ -183,3 +183,10 @@ justify-items: center;
 .text-right{
   text-align: right;
 }
+
+.invalid_input{
+  color: red;
+  font-size: 14px;
+  margin-top: -20px;
+  margin-left: 20px;
+}
